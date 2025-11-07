@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskervville", serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: #090040;
+    min-height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-list{
+    font-family: "Baskervville", serif;
+    list-style-type: none;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+a:any-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover, a:focus-visible{
+    text-shadow: 2px 2px 5px white;
+    text-decoration: underline;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+.intro, .event-center{
+    font-family: "Baskervville", serif;
+    font-size: 2.5rem;
+    color: #090040;
+    margin: 3rem auto;
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.intro-image, .restaurant-image, .event-center-image{
+    width: 80vw;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.overlay-text, .event-center-text{
+    position: absolute;
+    top: 7%;
+    left: 40%;
+}
+
+.hotel-slogan{
+    color: #090040;
+    font: italic 3rem "Baskerville", serif;
+    text-align: center;
+}
+
+.rooms{
+    font-family: "Baskervville", serif;
+    font-size: 1.2rem;
+    color: #090040;
+    margin: 3rem 3rem;
+    display: flex;
+}
+
+.rooms-img, .spa-img{
+    width: 50vw;
+    height: 34vw;
+    border-radius: 2rem;
+}
+
+.vertical-line{
+    border-left: 1px solid #09004080;
+    height: 30rem;
+    margin-left: 5rem;
+}
+
+.rooms-text p{
+    margin-left: 2rem;
+    margin-top: 12rem;
+}
+
+.main-button{
+    width: auto;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    background-color:#265f9f;
+    color: #fff;
+    border-color: #265f9f;
+}
+
+.restaurant{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.restaurant-text{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.spa{
+    font-family: "Baskervville", serif;
+    font-size: 1.2rem;
+    color: #090040;
+    margin: 3rem 3rem;
+    display: flex;
+}
+
+.event-center-text{
+    position: absolute;
+    color: #fff;
+    top: 70%;
+    left: 30%;
+    
+}
+
+footer{
+    color: #fff;
+    background-color: #090040;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.first-section{
+    font-family: "Baskervville", serif;
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3{
+    padding-top: 2rem;
+}
+
+.first-section p{
+    padding-top: 3em;
+    width: 10em;
+}
+
+p a{
+    padding-top: 0.2rem;
+}
+
+.footer-list{
+    list-style-type: none;
+    padding-top: 3rem;
+}
+
+.footer-list li{
+    padding-bottom: 1rem;
+}
+
+form{
+    padding-top: 3rem;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-envelope{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form .fa-arrow-right{
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.social-media-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 2rem auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
