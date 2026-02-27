@@ -28,8 +28,15 @@ img{
     list-style-type: none;
     padding-top: 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    margin-left: 5rem;
 }
+
+.navbar a{
+    padding-left: 5rem;
+    padding-right: 2rem;
+}
+
 
 a:any-link{
     color: #fff;
@@ -50,12 +57,9 @@ a:hover, a:focus-visible{
     font-family: "Baskervville", serif;
     font-size: 2.5rem;
     color: #090040;
-    margin: 3rem auto;
     display: flex;
-    padding-top: 3rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    position: relative;
 }
 
 .intro-image, .restaurant-image, .event-center-image{
@@ -64,24 +68,26 @@ a:hover, a:focus-visible{
     border-radius: 2rem;
 }
 
-.overlay-text, .event-center-text{
-    position: absolute;
-    top: 7%;
-    left: 40%;
+.overlay-text{
+    padding-top: 7rem;
+    padding-bottom: 1rem;
 }
 
 .hotel-slogan{
     color: #090040;
     font: italic 3rem "Baskerville", serif;
     text-align: center;
+    padding: 2rem 0;
 }
 
-.rooms{
+.rooms, .spa{
     font-family: "Baskervville", serif;
     font-size: 1.2rem;
     color: #090040;
-    margin: 3rem 3rem;
+    margin: 1rem 3rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rooms-img, .spa-img{
@@ -91,25 +97,24 @@ a:hover, a:focus-visible{
 }
 
 .vertical-line{
-    border-left: 1px solid #09004080;
-    height: 30rem;
-    margin-left: 5rem;
-}
-
-.rooms-text p{
-    margin-left: 2rem;
-    margin-top: 12rem;
+    border-top: 1px solid #09004080;
+    width: 30rem;
+    margin: 2rem 0;
 }
 
 .main-button{
     width: auto;
     padding: 0.2rem 1rem;
     border-radius: 1rem;
-    margin-left: 10rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color:#265f9f;
     color: #fff;
     border-color: #265f9f;
+}
+
+.rooms-text{
+    text-align: center;
 }
 
 .restaurant{
@@ -119,29 +124,19 @@ a:hover, a:focus-visible{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .restaurant-text{
-    position: absolute;
-    left: 25%;
-    top: 25%;
+    color: #090040;
+    padding-top: 2rem;
 }
 
 .spa{
-    font-family: "Baskervville", serif;
-    font-size: 1.2rem;
-    color: #090040;
-    margin: 3rem 3rem;
-    display: flex;
+    margin-bottom: 0;
 }
 
-.event-center-text{
-    position: absolute;
-    color: #fff;
-    top: 70%;
-    left: 30%;
-    
+.event-center-text, .event-center{
+    margin-bottom: 2rem;
 }
 
 footer{
@@ -237,5 +232,143 @@ hr{
 
 .copyright{
     text-align: center;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(9, 0, 64, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* .sidebar.is-visible{
+    display: flex;
+} */
+
+
+.sidebar li{
+    padding: 1rem;
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+    
+}
+
+.hideOnMobile{
+    display: none;
+}
+
+.hideDisplayButton{
+    display: revert;
+}
+
+@media screen and (min-width : 768px){
+
+.hideOnMobile{
+    display: revert;
+}
+
+.hideDisplayButton{
+    display: none;
+}
+.intro, .event-center{
+    margin: 3rem auto;
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.intro-image, .restaurant-image, .event-center-image{
+    width: 80vw;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.overlay-text, .event-center-text{
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    padding: 0;
+}
+
+.hotel-slogan{
+    color: #090040;
+    font: italic 3rem "Baskerville", serif;
+    text-align: center;
+}
+
+.rooms{
+    font-family: "Baskervville", serif;
+    font-size: 1.2rem;
+    color: #090040;
+    margin: 3rem 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.rooms-img, .spa-img{
+    width: 50vw;
+    height: 34vw;
+    border-radius: 2rem;
+}
+
+.vertical-line{
+    border-left: 1px solid #09004080;
+    height: 30rem;
+    margin-left: 5rem;
+    border-top: 0;
+    width: 0;
+}
+
+.rooms-text p{
+    margin-left: 2rem;
+    margin-top: 12rem;
+}
+
+.restaurant{
+    font-size: 2.5rem;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.restaurant-text{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    color: #fff;
+    padding: 0;
+}
+
+.spa{
+    font-family: "Baskervville", serif;
+    font-size: 1.2rem;
+    color: #090040;
+    margin: 3rem 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.event-center-text{
+    position: absolute;
+    color: #fff;
+    top: 70%;
+    left: 30%;
+    margin: 0;
+}
+
 }
 

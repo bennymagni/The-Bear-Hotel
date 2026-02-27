@@ -11,13 +11,25 @@
 </head>
 <body>
     <header>
+        <label class="menu">
+            <input type="checkbox">
+        </label>
         <nav class="navbar">
-            <ul class="navbar-list">
+            <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href="#"><img src="svgImg/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ROOMS</a></li>
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">BOOKING</a></li>
                 <li><a href="">CONTACT</a></li>
+            </ul>
+            <ul class="navbar-list">
+                <li class="hideOnMobile"><a href="">HOME</a></li>
+                <li class="hideOnMobile"><a href="">ROOMS</a></li>
+                <li class="hideOnMobile"><a href="">ABOUT</a></li>
+                <li class="hideOnMobile"><a href="">BOOKING</a></li>
+                <li class="hideOnMobile"><a href="">CONTACT</a></li>
+                <li class="hideDisplayButton" onclick=showSideBar()><a href="#"><img src="svgImg/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></li>
             </ul>
         </nav>
     </header>
@@ -79,7 +91,7 @@
                    Accra, Ghana.
                 </p>
                 <p>thebearhotel@gmail.com</p>
-                <p>+233 543 214 651</p>
+                <p>+233 240 854 157</p>
             </section>
             <section class="links">
                 <h3>Links</h3>
@@ -108,5 +120,17 @@
         <hr>
         <p class="copyright">The Bear Hotel &copy;2025. All Rights Reserved</p>
     </footer>
+    <script>
+        const showSideBar = () => {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex'
+        }
+
+        const hideSideBar = () => {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none'
+            //sidebar.classList.toggle('is-not-visible');
+        }
+    </script>
 </body>
 </html>
