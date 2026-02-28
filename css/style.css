@@ -60,6 +60,7 @@ a:hover, a:focus-visible{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    min-width: 100vw;
 }
 
 .intro-image, .restaurant-image, .event-center-image{
@@ -77,6 +78,7 @@ a:hover, a:focus-visible{
     color: #090040;
     font: italic 3rem "Baskerville", serif;
     text-align: center;
+    font-size: 1.8rem;
     padding: 2rem 0;
 }
 
@@ -98,7 +100,7 @@ a:hover, a:focus-visible{
 
 .vertical-line{
     border-top: 1px solid #09004080;
-    width: 30rem;
+    width: 100vw;
     margin: 2rem 0;
 }
 
@@ -128,7 +130,9 @@ a:hover, a:focus-visible{
 
 .restaurant-text{
     color: #090040;
+    font-size: 1.2rem;
     padding-top: 2rem;
+    text-align: center;
 }
 
 .spa{
@@ -137,6 +141,8 @@ a:hover, a:focus-visible{
 
 .event-center-text, .event-center{
     margin-bottom: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 footer{
@@ -144,13 +150,16 @@ footer{
     background-color: #090040;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
+    width: 100vw;
 }
 
 .first-section{
     font-family: "Baskervville", serif;
     min-height: 40vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer h3{
@@ -236,16 +245,17 @@ hr{
 .sidebar{
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgb(9, 0, 64, 0.2);
-    backdrop-filter: blur(10px);
+    background-color: rgb(9, 0, 64);
+    /* backdrop-filter: blur(10px); */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     justify-content: flex-start;
+    list-style-type: none;
 }
 
 /* .sidebar.is-visible{
@@ -368,6 +378,14 @@ hr{
     top: 70%;
     left: 30%;
     margin: 0;
+}
+
+.first-section{
+    font-family: "Baskervville", serif;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 }
