@@ -148,8 +148,6 @@ a:hover, a:focus-visible{
 footer{
     color: #fff;
     background-color: #090040;
-    border-top-left-radius: 5rem;
-    border-top-right-radius: 5rem;
     width: 100vw;
 }
 
@@ -310,6 +308,7 @@ hr{
     top: 7%;
     left: 40%;
     padding: 0;
+    font-size: 2.5rem;
 }
 
 .hotel-slogan{
@@ -361,6 +360,7 @@ hr{
     top: 25%;
     color: #fff;
     padding: 0;
+    font-size: 2.5rem;
 }
 
 .spa{
@@ -386,6 +386,11 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+footer{
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
 }
 
 }
